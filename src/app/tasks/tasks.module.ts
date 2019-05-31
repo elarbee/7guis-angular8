@@ -7,11 +7,13 @@ import { TimerComponent } from './tasks/timer/timer.component';
 import { CRUDComponent } from './tasks/crud/crud.component';
 import { CircleDrawerComponent } from './tasks/circle-drawer/circle-drawer.component';
 import { CellsComponent } from './tasks/cells/cells.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [CounterComponent, TemperatureConverterComponent, FlightBookerComponent, TimerComponent, CRUDComponent, CircleDrawerComponent, CellsComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [CounterComponent, TemperatureConverterComponent, FlightBookerComponent, TimerComponent, CRUDComponent, CircleDrawerComponent, CellsComponent]
 })
