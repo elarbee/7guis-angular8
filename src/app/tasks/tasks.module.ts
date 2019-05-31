@@ -12,6 +12,7 @@ import { CellsComponent } from './tasks/cells/cells.component';
   declarations: [CounterComponent, TemperatureConverterComponent, FlightBookerComponent, TimerComponent, CRUDComponent, CircleDrawerComponent, CellsComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [CounterComponent, TemperatureConverterComponent, FlightBookerComponent, TimerComponent, CRUDComponent, CircleDrawerComponent, CellsComponent]
 })
 export class TasksModule { }
