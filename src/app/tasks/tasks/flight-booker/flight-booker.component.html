@@ -1,3 +1,18 @@
-<p>
-  flight-booker works!
-</p>
+<!--https://eugenkiss.github.io/7guis/tasks#flight-->
+
+<select [(ngModel)]="roundTrip">
+  <option [ngValue]="false">one-way flight</option>
+  <option [ngValue]="true">return flight</option>
+</select>
+
+<input [value]="start" (input)="calculateStartDate($event.target.value)" type=date >
+<input *ngIf="roundTrip"
+       [value]="end"
+       (input)="calculateEndDate($event.target.value)"
+       [disabled]='!roundTrip'
+       type=date
+>
+
+<button [disabled]="(roundTrip && (startDate >= endDate)) || !datesValid()" (click)="bookFlight()">Book</button>
+
+<p>{{flightBooked}}</p>
