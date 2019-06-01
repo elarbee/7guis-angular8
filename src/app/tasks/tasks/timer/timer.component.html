@@ -1,3 +1,10 @@
-<p>
-  timer works!
-</p>
+<!--https://eugenkiss.github.io/7guis/tasks#timer-->
+<label>Elapsed Time</label>
+<progress [value]="duration" [max]="maxTime"></progress>
+
+<p>{{(duration < maxTime ? duration.toFixed(2) : maxTime)+'s'}}</p>
+
+<label>Duration:</label>
+<input [(ngModel)]="maxTime" (input)="checkMaxExceeded()" min="1" max="100" type="range">
+
+<button (click)="duration = 0">Reset</button>
