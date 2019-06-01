@@ -1,3 +1,17 @@
-<p>
-  crud works!
-</p>
+<label>Filter Prefix:</label>
+<input [(ngModel)]="filter">
+
+<div class="horizontal">
+  <select [(ngModel)]="i" size="5">
+    <option *ngFor="let name of names | prefixFilter: filter; index as i" [value]="i">{{name.surname + ', ' + name.name}}</option>
+  </select>
+  <div>
+    <input [placeholder]="'Name'" [(ngModel)]="name">
+    <br>
+    <input [placeholder]="'Surname'" [(ngModel)]="surname">
+  </div>
+</div>
+
+<button (click)="create()">Create</button>
+<button (click)="update()" [disabled]="!i">Update</button>
+<button (click)="delete()" [disabled]="!i">Delete</button>
