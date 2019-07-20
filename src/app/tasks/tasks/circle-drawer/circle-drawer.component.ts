@@ -1,5 +1,5 @@
 // Mostly adapted from Rich Harris's code for Svelte at https://github.com/sveltejs/v2.svelte.dev/tree/master/content/examples
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-circle-drawer',
@@ -8,8 +8,8 @@ import {Component} from '@angular/core';
 })
 export class CircleDrawerComponent {
 
-  width = window.innerWidth;
-  height = window.innerHeight;
+  @Input() width: number = 500;
+  @Input() height: number = 500;
 
   i = 0;
   undoStack: {x: number, y: number, r: number}[][] = [[]];
