@@ -1,0 +1,33 @@
+div.tasks {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 42px;
+
+  div.text {
+    font-family: sans-serif;
+    color: #474747;
+  }
+  h2 {
+    font-family: sans-serif;
+    color: #474747;
+  }
+
+  app-counter, app-temperature-converter, app-flight-booker, app-timer, app-crud, app-circle-drawer {
+    display: block;
+    margin: 12px;
+    padding: 6px;
+    background-color: #ebebeb;
+    box-shadow: 3px 6px 13px 0 #00000030;
+    font-family: sans-serif;
+    color: #474747;
+    border: 1px solid #acacac;
+    border-radius: 6px;
+  }
+}
+
+p.footer {
+  font-family: sans-serif;
+  color: #474747;
+}
+
