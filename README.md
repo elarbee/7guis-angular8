@@ -14,6 +14,16 @@ The timer task included here is made incredibly trivial by the proper usage of t
 
 # Todo
 * Cells task is not implemented. I'm planning on adding this soon. 
+
+# To Run Locally
+
+Clone the project using git.
+
+Run `npm install`
+
+Install the Angular CLI tool and run
+
+`ng serve`
 #Thanks
 * [Eugen Kiss](https://eugenkiss.github.io/7guis/) who created the 7Guis benchmark
 * [Rich Harris](https://github.com/Rich-Harris) who's examples for the Svelte Framework I frequently referenced.
