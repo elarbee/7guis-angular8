@@ -27,9 +27,14 @@ export class CircleDrawerComponent {
       return;
     }
 
+    const target = event.target;
+    const dim = target.getBoundingClientRect();
+    const x = event.clientX - dim.left;
+    const y = event.clientY - dim.top;
+
     const circle = {
-      x: event.clientX,
-      y: event.clientY,
+      x,
+      y,
       r: 50
     };
 
