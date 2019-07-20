@@ -1,27 +1,21 @@
 # SevenGuis
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This is an implementation of Eugen Kiss' 7Guis Usability Benchmark 
+for GUI's implemented in Angular 8.
 
-## Development server
+This is not meant as a definitive example of best practices in Angular or web development,
+just an example project for anyone interested in learning about how certain concepts can be implemented.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Takeaways
+* A great feature of Angular is it's default inclusion of the [RxJs](https://rxjs-dev.firebaseapp.com/) library.
+The timer task included here is made incredibly trivial by the proper usage of this library.
+* 2 way binding for SVG manipulation (Circle drawing task) is a very powerful and underutilized feature.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Todo
+* Cells task is not implemented. I'm planning on adding this soon. 
+#Thanks
+* [Eugen Kiss](https://eugenkiss.github.io/7guis/) who created the 7Guis benchmark
+* [Rich Harris](https://github.com/Rich-Harris) who's examples for the Svelte Framework I frequently referenced.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
