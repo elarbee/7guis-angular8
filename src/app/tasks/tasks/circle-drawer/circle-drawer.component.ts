@@ -27,7 +27,7 @@ export class CircleDrawerComponent {
       return;
     }
 
-    const target = event.target;
+    const target = event.target as HTMLElement;
     const dim = target.getBoundingClientRect();
     const x = event.clientX - dim.left;
     const y = event.clientY - dim.top;
