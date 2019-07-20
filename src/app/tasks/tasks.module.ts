@@ -6,10 +6,11 @@ import { FlightBookerComponent } from './tasks/flight-booker/flight-booker.compo
 import { TimerComponent } from './tasks/timer/timer.component';
 import { CRUDComponent, PrefixFilterPipe } from './tasks/crud/crud.component';
 import { CircleDrawerComponent } from './tasks/circle-drawer/circle-drawer.component';
+import { CellsComponent } from './tasks/cells/cells.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [CounterComponent, TemperatureConverterComponent, FlightBookerComponent, TimerComponent, CRUDComponent, CircleDrawerComponent, PrefixFilterPipe],
+  declarations: [CounterComponent, TemperatureConverterComponent, FlightBookerComponent, TimerComponent, CRUDComponent, CircleDrawerComponent, PrefixFilterPipe, CellsComponent],
   imports: [
     CommonModule,
     FormsModule
