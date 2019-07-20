@@ -25,8 +25,7 @@ Install the Angular CLI tool and run
 
 `ng serve`
 
-
-#Thanks
+# Thanks
 * [Eugen Kiss](https://eugenkiss.github.io/7guis/) who created the 7Guis benchmark
 * [Rich Harris](https://github.com/Rich-Harris) who's examples for the Svelte Framework I frequently referenced.
 
