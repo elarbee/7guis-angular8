@@ -1,3 +1,20 @@
-<p>
-  circle-drawer works!
-</p>
+
+<button (click)="undo()" [disabled]="i === 0">Undo</button>
+<button (click)="redo()" [disabled]="i === undoStack.length -1">Redo</button>
+
+<div *ngIf="adjusting" class="adjuster">
+  <p>adjust diameter of circle at ({{selected.x}}, {{selected.y}})</p>
+  <input type="range" [value]="selected.r" (input)="adjust($event)">
+</div>
+
+<svg (click)="onClick($event)" [attr.width]="width" [attr.height]="height">
+  <circle *ngFor="let c of circles"
+          [attr.cx]="c.x"
+          [attr.cy]="c.y"
+          [attr.r]="c.r"
+          fill="#ffffff"
+          [attr.stroke]="'#000000'"
+          (click)="select(c, $event)"
+          (contextmenu)="adjustCircle(c, $event)"
+  />
+</svg>
