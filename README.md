@@ -6,6 +6,8 @@ for GUI's implemented in Angular 8.
 This is not meant as a definitive example of best practices in Angular or web development,
 just an example project for anyone interested in learning about how certain concepts can be implemented.
 
+You can view a live example of the code at [elarbee.github.io/7guis]([elarbee.github.io/7guis])
+
 
 # Takeaways
 * A great feature of Angular is it's default inclusion of the [RxJs](https://rxjs-dev.firebaseapp.com/) library.
